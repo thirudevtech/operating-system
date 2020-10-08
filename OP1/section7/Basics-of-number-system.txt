@@ -1,0 +1,9 @@
+52. Basics of binary numbers :
+------------------------------
+
+* Number : It is collection of digits or bits.
+* Number system :
+1. Decimal number system (base-10 or Radix-10)
+2. Octal number system  (base-8)
+3. Hexa Decimal system  (base-16)
+4. Binary system        (base-2)

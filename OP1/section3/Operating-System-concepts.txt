@@ -1,0 +1,50 @@
+Program vs Process, states of a process :
+-----------------------------------------
+
+* For single program/software multiple processes can be created.
+* states of a process :
+1. New state  
+2. Ready state 
+3. Running state 
+4. I/O state 
+5. Terminated state 
+6. Suspend ready state 
+7. Suspend wait state
+
+Degree of multi-programming :
+-----------------------------
+
+* Degree of multi-programming :- Maximum number of processes which can be placed in the RAM in our computer.
+
+Types of operating systems :
+----------------------------
+
+1. Batch operating system : It has one CPU and It allows only one processes at a time in RAM.
+2. Multi-programming OS   : It has one CPU and It allows more than one processes at a time in RAM.
+3. Multi-processesing OS  : It has more than one CPU and it allows only one processes at a time in RAM.
+
+* CPU Efficiency : usefulltime of CPU/ Total time of CPU
+
+Process control block, Attribures of process :
+------------------------------------------------
+
+* Passive entity : A program which initiates process.
+* Active entity  : process which is initiated by program.
+
+* Stack memory : It will keep track of function calls that happening from process during it's execution.
+* Heap Memory  : malloc(), calloc() dynamically allocates this space during process execution.
+
+* Stack space and Heap space is not equal, it may vary based on process.
+* Every process has control block.
+* Control block : It contains stack memory, Heap memory, static variables & global variables and program  
+
+Attribures of process :
+
+1. Process ID
+2. Program counter (nothing but register maintained closer to CPU): It is rensposilble to allocate unfinished process to CPU, to execute from where it stopped.
+3. Process state
+4. General purpose register : It is used to remember prempted (stopped forcefully from execution by CPU) process register values to complete execution of process by CPU  
+5. Priority
+6. List of open files  : It is used to remember prempted (stopped forcefully from execution by CPU) process list of open files to complete execution of process by CPU
+7. List of open devices : It is used to remember prempted (stopped forcefully from execution by CPU) process list of open devices to complete execution of process by CPU
+8. Protection : It makes sure that one process space is not used by other process during execution

@@ -1,0 +1,67 @@
+12 - Types of scheduler, context switching :
+--------------------------------------------
+
+* Context :- Process control block and atrributes of a process is called Context.
+* Every process has it's priority number based on that they will execute.
+
+Schedulers :
+
+1. Long-term scheduler : It is responsible to get processes from hard disk to RAM.
+2. Short-term scheduler: It is responsible to schedule processes to CPU from RAM.
+3. Medium-term scheduler: It is responsible to swap-out low priority processes from RAM to Hard-Disk and swap-in high priority processes from Hard-Disk to RAM.
+
+* Context switching :- Pre-empting low priority process on CPU and scheduling high priority process to RAM. 
+
+
+13. Various times of a process :
+--------------------------------
+
+1. Arrival time :
+2. Brust time   : (Also called execution time)
+3. Completion time :
+4. Turn-around time : Total duration of process in RAM. 
+5. Waiting time : Total duration of process in RAM waiting for CPU to execute. 
+6. Response time : 
+7. I/O time : Total duration of process in RAM waiting for I/O.
+
+
+14. Types of scheduling algorithms :
+------------------------------------
+
+1. Pre-emptive scheduling algorithms     : This will pre-emptive process which is executing by CPU, if high priority process arrives in RAM. 
+2. Non-pre-emptive scheduling algorithms : This will not pre-emptive process which is executing by CPU, if high priority process arrives in RAM.
+
+* scheduling algorithms are applied only to process which are in ready state in RAM.
+
+
+15. SJF scheduling algorithm :
+------------------------------
+ 
+* Shortest Job First algorithm (SJF) : It is non pre-emptive scheduling algorithm, It will allocate process to the CPU which has least burst time (execution time)
+* Turn-around time = waiting time + Brust time + I/O time 
+* Schedule length : Total time spent by Schedulig algorithm to schedule processes
+* Schedule length = completion time of last process - arrival time of first process
+* Throughput = No of processes completed execution / schedule length
+
+
+18. Shortest remaining time first scheduling algorithm (SRTF) : 
+---------------------------------------------------------------
+
+* It is pre-emptive version of SJF.
+* It behaves as SJF when all processes reaches to RAM from Hard-Disk. 
+
+19. Response time explained with example :
+------------------------------------------
+
+* Response time : Waiting time of a process untill it get CPU for the first time. 
+* In non pre-emptive scheduling algorithm Response time = waiting time of a process, but it is not true in  pre-emptive scheduling algorithm.
+
+
+25. First come first served scheduling algorithm (FCFS) :
+---------------------------------------------------------
+
+* The process which has least arrival time will be scheduled first.
+* It is non pre-emptive scheduling algorithm.
+* It is not a priority based scheduling algorithm (scheduling process does not depend on it's process property).
+* In non pre-emptive scheduling algorithm response time = waiting time 
+* CPU efficiency = usefull time / total time

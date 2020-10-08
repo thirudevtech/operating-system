@@ -1,0 +1,18 @@
+27. Starvation :
+----------------
+
+* Starvation : If there is a chance for a process in the ready state to wait indefinitely to get the CPU.
+* Any priority based scheduling algorithm will definitely suffer from the problem of starvation.
+
+28. Convoy effect :
+-------------------
+
+* Convoy effect : A smaller process (process with small execution time) waiting for one big process to get off (release) by the CPU.
+* An algorithm with convoy effect problem may lead to higher waiting time and higher turn-around time in comparision to an algorithm without convoy effect.
+
+30. Throughput :
+----------------
+
+* Throughput : Number of processes executed per unit.
+* Throughput : Number of processes executed / schedule length 
+* Throughput order : SRTF, SJF, FCFS 

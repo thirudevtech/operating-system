@@ -1,0 +1,89 @@
+54. Basics of memory allocation :
+---------------------------------
+
+* Registers are fastest memory in computer.
+* Registers are closely located to CPU, and CPU uses these registers to store data of processes during execution. 
+* RAM is divided into "words", within a word we can place "instruction" or "data" 
+* Computer memory stores only "instruction" or "data"
+* Every instruction in RAM may occupies one or more "words"
+* Every ""word" of RAM will has some address
+* If RAM has 2 power m words, then words are addressed by "m" bits.
+* Generally, CPU asks RAM for data of a word providing it's address.
+* Communication between CPU and RAM occurs via "bus", CPU sends address of "word" to RAM via "address bus" and RAM provides data to CPU via "data bus"
+* "bus" is collection of wires connected to various devices in computer.
+
+55. Contiguous allocation vs non-contiguous allocation :
+--------------------------------------------------------
+
+* All addresses of RAM is also called as "physical address space"
+* Collection of addresses of a process is called "Logical address space"
+* Contiguous allocation :- If all addresses of a process are placed adjacent to one another in RAM, is called "Contiguous allocation".
+* non-Contiguous allocation :- If all addresses of a process are not placed adjacent to one another in RAM, is called "non-Contiguous allocation".
+
+* Contiguous allocation types :
+1. Fixed Partioning (static partioning)
+2. Variable Partioning (dynamic partioning)
+
+56. Fixed Partioning (static partioning) :
+------------------------------------------
+
+* RAM is partitioned by default, before arriving processes.
+* Every partition can hold only one process data.
+* Any process can place in only one partition, and process cannot span into other partition.  
+* Number of processes handled by RAM at a time, is equal to Number of partitions in RAM.
+
+Disadvantages :
+
+1. Internal fragmentation problem exists.
+   This is because of space wastage in partition during process allocation (as process size is less than partition size)
+2. Process size is limited by the size of the largest partition.
+   Since each partition accomidates only one process, we cannot place process in RAM, which is bigger than partition size.
+3. Degree of multi-programming is limited by the number of partitions.
+   As Every partition can hold only one process data, Number of processes handled by RAM at a time, is equal to Number of partitions in RAM.
+  
+* If 2 partitions with each has 2 mb space but not located in adjacent within RAM, then we cannot place 4mb process 
+  into the RAM, because it is Contiguous allocation method, so we are wasting space in RAM, this is called as "external fragmentation problem" 
+  
+NOTE:- 
+
+No external fragmentation problem exists.
+
+
+57. Variable Partioning (dynamic partioning) :
+----------------------------------------------
+
+* RAM is partitioned on the fly based on the processes size arriving into the RAM.
+
+1. No Internal fragmentation problem exists.
+2. Process size is not limited by the size of the largest partition, rather it is limited by the size of the RAM.  
+3. Degree of multi-programming is not limited.
+4. external fragmentation problem exists.  
+   
+58. Memory allocation algorithms :
+----------------------------------
+
+Types of Memory allocation algorithms :
+
+1. First fit :- It will traverse from top of RAM to bottom to find slot for process allocation and it will allocate where ever it finds slot, it repeats for every time. 
+2. Next fit :- It will traverse from top of RAM to bottom to find slot for process allocation and it will allocate where ever it finds slot, but for next time it will 
+   start searching slot from previous process allocation location. 
+   
+3. Best fit :- It will traverse from top of RAM to bottom to find best small slot for a process allocation and it will allocate once it search complete RAM, it 
+   repeats for every time.
+   
+   Disadvantages :-
+   * It will make more smaller holes in RAM, which we cannot allocate any other processes and wasting RAM space.
+   
+4. Worst fit :- It will traverse from top of RAM to bottom to find best large slot for a process allocation and it will allocate once it search complete RAM, it 
+   repeats for every time.
+   
+   
+63. Binary addressing revisited :
+---------------------------------
+
+
+65. Need for Paging :
+---------------------
+
+* Paging and segementation are most important topics in operating system.
+ 

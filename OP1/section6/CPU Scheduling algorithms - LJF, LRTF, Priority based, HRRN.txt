@@ -1,0 +1,85 @@
+31. Longest job first scheduling algorithm (LJF) :
+--------------------------------------------------
+
+* LJF :- Among all processes(In ready state) arrived in RAM, process with largest burst time will execute first. 
+* It is non pre-emptive.
+* It is priority based algorithm.
+
+Disadvantages :
+1. Starvation problem exists
+2. Convoy effect exists
+3. Throughput is very less
+4. Practically very difficult
+
+33. Longest remaining time first scheduling algorithm (LRTF) :
+--------------------------------------------------------------
+
+* LRTF :- Among all processes(In ready state) arrived in RAM, process with largest burst time will execute first. 
+* It is pre-emptive.
+* It is priority based algorithm. 
+
+Disadvantages :
+1. Starvation problem exists
+2. Convoy effect exists
+3. Throughput is very less
+4. Practically very difficult
+
+37. Round Robin scheduling algorithm (RR) :
+-------------------------------------------
+
+* Time Quantum :- Maximum allowable time a process can run without getting pre-empted. 
+* It is combination of "FCFS" and "Time Quantum".
+* It works on the basis of particular time quantum.
+* It uses queue data structure.
+* Very popular and used in most of the Operating systems today. 
+
+41. Advantages and Limitations RR algorithm :
+---------------------------------------------
+
+* No starvation problem
+* No convoy effect problem
+* Practically implementable
+* Response time is good
+
+42. Non-pre-emptive priority based scheduling algorithm :
+---------------------------------------------------------
+
+* It is priority based, and non-pre-emptive (priority is explicitly given in question).
+
+ 
+43. pre-emptive priority based scheduling algorithm :
+---------------------------------------------------------
+
+* It is priority based, and pre-emptive (priority is explicitly given in question).
+* Once all processes arrives to RAM, then pre-emptive will behaves as non-pre-emptive.
+
+
+45. SRTF with processes requiring CPU and I/O time 2 :
+------------------------------------------------------
+
+* Process which is undergoing I/O state is considered as in "block state", that means it is not eligible to schedule to CPU.
+
+
+47. Highest response ratio next scheduling algorithm (HRRN) :
+-------------------------------------------------------------
+
+* It is non-pre-emptive.
+* It will choose the process which has highest response ratio next 
+* response ratio = (w+b)/b 
+w - Waiting time of a process so far
+b - burst time 
+
+* Favours not only shorter processes, but also limits the waiting time of longer processes.
+
+49. Process state diagram :
+---------------------------
+
+50. Suspend ready and Suspend I/O state :
+-----------------------------------------
+* process can undergo I/O both in RAM and Hard-Disk.
+ 
+51. Dispatcher :
+----------------
+
+* Dispatcher is also a program, part of operating system code. If a process pre-empted, It will loads the content of registers to complete execution of pre-empted 
+  process.

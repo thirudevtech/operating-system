@@ -1,0 +1,36 @@
+Introduction to computer systems :
+----------------------------------
+
+BOOK : OPERATING SYSTEM PRINCIPLES BY PETER BAER GALVIN 
+
+* program is also called as software
+* Process is also called as job 
+* combination of hardware, software and data used to solve human problem.
+* RAM       : Is used to access program or data by CPU, lost data init if computer restarts.
+* Hard-Disk : Is used to store data permanently, CPU takes way longer time to access program or data from it.
+* Types of Memory : RAM, Hard-Disk, Cache, registers. 
+
+How Hardware devices work together :  
+------------------------------------
+
+* CPU understands machine language 
+* All language programs like (java, c#, python etc) are high level language, they needs to convert to manchine language using complier. 
+* CPU always reach out to RAM to get program or data to execute, if it does not find info in RAM then a copy should be taken from Hard-Disk to RAM.
+
+Need for operating systems from scratch :
+-----------------------------------------
+
+* Long-term scheduler(one of the functionality of operating systems code) is the one which selects the processes from Hard-Disk to RAM.
+* Short-term scheduler(one of the functionality of operating systems code) is the one which decides which process should access CPU from RAM.
+* Main functionality of operating systems is resource allocation or resource manager.
+
+How input and output devices work together :
+--------------------------------------------
+
+* OS code will be there in RAM forever. 
+* RAM space is divided into "OS space" and "user space". (OS space contain OS code)
+* Buffer means "Memory or space"
+* Every I/O device has buffer associated with it.
+* CPU contains : "Control unit" and "Arithematic logic unit"
+* Execution time and burst time are same. 
+* Turn around time = "waiting time" + "burst time" + "i/o time" (these order might br different for different programs)
